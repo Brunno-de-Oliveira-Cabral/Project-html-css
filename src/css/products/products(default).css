@@ -1,0 +1,68 @@
+/* ESTILO DO HEADER(product.html)*/
+
+body {
+    background-color: #280031;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ion-icon {
+    font-size: 1.6rem;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 8rem;
+}
+
+.logo h1{
+    font-size: 1.6rem;
+}
+
+.logo p{
+    margin-left: 10px;
+    font-size: 1rem;
+    font-family: helvetica;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 2px solid #fdfdfd;
+    border-radius: 6px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.search:hover{
+    border-color: #280031;
+}
+
+.search input{
+    height: 1.8rem;
+    width: 20rem;
+    padding: 4px 6px;
+    border: 0px;
+    outline: 0px;
+}
+
+
+/* ESTILO DO MAIN (index.html)*/
+
