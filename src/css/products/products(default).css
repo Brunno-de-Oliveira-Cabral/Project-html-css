@@ -1,11 +1,7 @@
 /* ESTILO DO HEADER(product.html)*/
 
 body {
-    background-color: #27022f;
-    background-image: url(../../img/products/cod/product\ page.jpg);
-    background-position-y: center;
-    background-position-x: bottom;
-    background-repeat: no-repeat;
+    background-image: url('');
 }
 
 header {
