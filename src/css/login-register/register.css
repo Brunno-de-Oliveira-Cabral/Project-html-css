@@ -12,11 +12,17 @@ form {
     background-color: white;
     max-width: 500px;
     width: 70%;
-    padding: 20px;
+    padding: 2.4rem 1.1rem 1.1rem;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 80px 20px 20px
+    }
 }
 
 form h3 {
@@ -29,7 +35,10 @@ form h3 {
 }
 
 form input[type=email],
-input[type=password] {
+input[type=password],
+input[type=text],
+input[type=tel],
+input[type=date] {
     width: 100%;
     height: 45px;
     border: 1px solid #ccc;
@@ -68,14 +77,46 @@ form input[type=password] {
     background-position-x: 10px;
 }
 
+form input[type=text] {
+    background-image: url("../../img/login-register/document-text-outline.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25px;
+    padding: 0px 40px;
+    background-position-x: 10px;
+}
+
+form input[type=number] {
+    background-image: url("../../img/login-register/reader-outline.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25px;
+    padding: 0px 40px;
+    background-position-x: 10px;
+}
+
 form p {
     font-family: cursive;
     padding-left: 10px;
 }
 
-.recover_password,
-.text_register {
+#obs_password {
+    font-family: cursive;
+    padding-left: 6px;
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 10px 0px 15px 0px;
+}
+
+.notification {
+    font-family: NotoSans-Regular, sans-serif;
+    padding-left: 6px;
+    font-size: 14px;
     text-align: center;
-    font-size: 15px;
-    padding: 10px 0px;
+    margin: 15px 0px;
+}
+
+#start_session {
+    text-align: center;
+    margin: 15px 0px;
 }
