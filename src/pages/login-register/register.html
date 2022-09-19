@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/login-register/register.css  ">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="../../index.html">
+            <h3>Criar seu cadastro</h3>
+            <p>Endereço de e-mail</p>
+            <input type="email" name="Email" placeholder="Seu email..." />
+            <p>Senha</p>
+            <input type="password" name="password" placeholder="Sua senha..." />
+            <p id="obs_password">A senha deve conter pelo menos 8 caracteres, incluindo pelo menos 1 número</p>
+            <p>confirmar senha</p>
+            <input type="password" name="confirm_password" placeholder="Repita sua senha..." />
+            <p>Nome</p>
+            <input type="text" name="first_name" placeholder="Seu nome">
+            <p>Sobreome</p>
+            <input type="text" name="last_name" placeholder="Seu sobrenome">
+            <p>Número de celular</p>
+            <input type="tel" name="last_name" placeholder="Seu número de celular">
+            <p>Data de nascimento</p>
+            <input type="date" name="birth_date">
+            <p>CPF</p>
+            <input type="number" name="CPF" placeholder="Seu CPF">
+            <div class="notification">
+                <input type="checkbox" name="checkbox_register" id="checkbox_notification">
+                <label for="checkbox_notification">Eu quero ser o primeiro a receber descontos, promoções e novidades</label>
+            </div>
+            <input type="submit" name="sub-button" value="criar seu cadastro" />
+            <p id="start_session">Já tem uma conta? <a href="./login.html">Inicie a sessão aqui</a></p>
+        </form>
+    </body>
 </html>
