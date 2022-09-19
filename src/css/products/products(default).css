@@ -66,3 +66,17 @@ ion-icon {
 
 /* ESTILO DO MAIN (index.html)*/
 
+.container{
+        width: 100%;
+        min-height: 100vh;
+        background: #d0eaff;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+}
+
+img .cp{
+    size: 50px;
+    align-items: center;
+    
+}
