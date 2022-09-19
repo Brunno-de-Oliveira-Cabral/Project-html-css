@@ -1,7 +1,11 @@
 /* ESTILO DO HEADER(product.html)*/
 
 body {
-    background-color: #280031;
+    background-color: #27022f;
+    background-image: url(../../img/products/cod/product\ page.jpg);
+    background-position-y: center;
+    background-position-x: bottom;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -23,7 +27,16 @@ ion-icon {
 .logo{
     display: flex;
     align-items: center;
-    margin-right: 8rem;
+    margin-right: 10rem;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    margin-right: 1.3rem;
+    margin-left: 1.6rem;
+    text-decoration: none;
+    color: #000000;
 }
 
 .logo h1{
@@ -63,20 +76,36 @@ ion-icon {
     outline: 0px;
 }
 
-
 /* ESTILO DO MAIN (index.html)*/
 
-.container{
-        width: 100%;
-        min-height: 100vh;
-        background: #d0eaff;
-        display: flex;
-        align-items: right;
-        justify-content: right;
-}
 
-img .cp{
-    size: 50px;
+
+.main{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+.main a{
+    text-decoration: none;
+}
+.products_details_banner img{
+    margin-top: 100px;
+    margin-right: 600px;
+    
     
 }
+.products_details_banner h2{
+    font-size:x-large;
+    color: azure;
+    text-align:justify;
+    text-decoration: none;
+    font-style: oblique;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.products_detais_cotent p{
+    font-size: medium;
+    color: aqua;
+    text-decoration: underline;
+  }
