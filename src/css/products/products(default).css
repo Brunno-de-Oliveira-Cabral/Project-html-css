@@ -1,7 +1,10 @@
 /* ESTILO DO HEADER(product.html)*/
 
-body {
-    background-image: url('');
+body{
+    background-image: url("../../img/products/disponiveis na lobo(icons)/product page/product page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 header {
@@ -85,10 +88,9 @@ ion-icon {
     text-decoration: none;
 }
 .products_details_banner img{
-    margin-top: 100px;
-    margin-right: 600px;
-    
-    
+    margin-top: 200px;
+    margin-right: 750px;   
+    max-width: 450px;
 }
 .products_details_banner h2{
     font-size:x-large;
@@ -98,10 +100,95 @@ ion-icon {
     font-style: oblique;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.section h2{
+    font-size: x-large;
+    color: aliceblue;
+    text-decoration: solid;
+    border: 3px solid aliceblue;
+    margin-right: 540px;
+}
 
-
-.products_detais_cotent p{
+fieldset{
+    background-color: #280031;
+    border-style: solid;
+    
+    margin-right: 400px;
+}
+.section article{
+    border-width: 150px;
+    border-style: inset;
+    border: 2px inset antiquewhite;
     font-size: medium;
     color: aqua;
     text-decoration: underline;
   }
+
+
+
+/*ESTILO FOOTER*/
+.site-footer
+{
+  background-color:#300b42;
+  padding:5px  200px;
+  font-size:15px;
+  line-height:15px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:2
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+
+.copyright-text
+{
+  margin:0
+}
+
