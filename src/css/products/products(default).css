@@ -1,9 +1,10 @@
 /* ESTILO DO HEADER(product.html)*/
 
-body {
+body{
     background-image: url("../../img/products/disponiveis na lobo(icons)/product page/product page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 header {
