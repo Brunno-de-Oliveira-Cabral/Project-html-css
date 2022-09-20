@@ -105,90 +105,223 @@ ion-icon {
     color: aliceblue;
     text-decoration: solid;
     border: 3px solid aliceblue;
-    margin-right: 540px;
+    text-align: left;
+    max-width: 300px;
+    position: static left;
 }
 
 fieldset{
     background-color: #280031;
     border-style: solid;
-    
-    margin-right: 400px;
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
 }
 .section article{
     border-width: 150px;
     border-style: inset;
     border: 2px inset antiquewhite;
     font-size: medium;
-    color: aqua;
-    text-decoration: underline;
+    color: rgb(241, 255, 255);
+    text-decoration: text;
+  }
+
+  aside{
+    position: right;
+    text-align: right;
+    background-color: aliceblue;
+    max-width: 100px;
+    max-height: 200px;
   }
 
 
 
 /*ESTILO FOOTER*/
-.site-footer
-{
-  background-color:#300b42;
-  padding:5px  200px;
-  font-size:15px;
-  line-height:15px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:2
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
+footer{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.copyright-text
-{
-  margin:0
+.footer-pt1{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10px;
 }
 
+.footer-pt1 .footer-title{
+    font-family: 'Roboto';
+    color: #fdfdfd;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.footer-pt1 .footer-subtitle{
+    font-family: 'Roboto';
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-pt1 .footer-text{
+    color: #fdfdfd;
+    margin-bottom: 1rem;
+}
+
+.footer-beneficios{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beneficio{
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.beneficio ion-icon{
+    width: 4%;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 35px;
+    color: rgb(0, 98, 255);
+}
+
+.beneficio .grande{
+    width: 5.3%;
+}
+
+.beneficio-texts-title{
+    margin-bottom: 10px;
+    color: #fdfdfd;
+    font-family: 'Roboto';
+}
+
+.beneficio-texts-text{
+    color: #fdfdfd;
+}
+
+
+.footer-pt2{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(250, 250, 71);
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.ajuda{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.5rem;
+}
+
+.ajuda-title{
+    color: #280031;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+}
+
+.ajuda-button a{
+    display: flex;
+    background-color:  rgb(203, 221, 5);
+    border: 1px solid  rgb(203, 221, 5);
+    padding: 3px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000000;
+    transition: .4s;
+}
+
+.ajuda-button a:hover{
+    border: 1px solid #59086b;
+}
+
+.Pais{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Pais-title{
+    color: #280031;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+}
+
+.Pais-button a{
+    display: flex;
+    background-color:  rgb(203, 221, 5);
+    border: 1px solid  rgb(203, 221, 5);
+    padding: 3px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000000;
+    transition: .4s;
+}
+
+.Pais-button a:hover{
+    border: 1px solid #59086b;
+}
+
+.creditos{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.creditos-title{
+    color: #280031;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+}
+
+.creditos-button a{
+    display: flex;
+    background-color:  rgb(203, 221, 5);
+    border: 1px solid  rgb(203, 221, 5);
+    padding: 3px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000000;
+    transition: .4s;
+}
+
+.creditos-button a:hover{
+    border: 1px solid #59086b;
+}
+
+.footer-pt3{
+    width: 100%;
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-pt3 p{
+    margin-left: 6.2rem;
+}
+
+.footer-pt3 img{
+    width: 60px;
+    height: 60px;
+    margin-right: 6.2rem;
+}
