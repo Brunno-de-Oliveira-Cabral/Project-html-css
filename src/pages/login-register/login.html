@@ -9,16 +9,39 @@
         <link rel="stylesheet" href="../../css/login-register/login.css">
         <title>Document</title>
     </head>
+
     <body>
-        <form action="../../index.html">
-            <h3>Login do cliente</h3>
-            <p>Endereço de e-mail</p>
-            <input type="email" name="Email" placeholder="Seu email..." />
-            <p>Senha</p>
-            <input type="password" name="password" placeholder="Sua senha..." />
-            <p class="text_register">Não tem uma conta? <a href="./register.html">Registre-se aqui</a></p>
-            <input type="submit" name="sub-button" value="Entrar" />
-            <p class="recover_password">Esqueceu sua senha? <a href="">Recupere aqui.</a></p>
-        </form>
+        <div class="container">
+            <div class="header">
+                <h2>Login do cliente</h2>
+            </div>
+
+            <form class="form" id="form">
+
+                <div class="form-control">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" >
+                    <i><img class="img-success" src="../../img/login-register/error_sucess/success-icon.svg" alt=""></i>
+                    <i><img class="img-error" src="../../img/login-register/error_sucess/error-icon.svg" alt=""></i>
+
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="Password">Senha</label>
+                    <input type="password" id="Password"/>
+                    <i><img class="img-success" src="../../img/login-register/error_sucess/success-icon.svg" alt=""></i>
+                    <i><img class="img-error" src="../../img/login-register/error_sucess/error-icon.svg" alt=""></i>
+
+                    <small>Error message</small>
+                </div>
+
+                <p class="text_register">Não tem uma conta? <a href="./register.html">Registre-se aqui</a></p>
+                <button type="submit" >ENVIAR</button>
+                <p class="recover_password">Esqueceu sua senha? <a href="">Recupere aqui.</a></p>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="../../js/login-register/login.js"></script>
     </body>
 </html>
