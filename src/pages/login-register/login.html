@@ -7,41 +7,97 @@
         <link rel="stylesheet" href="../../css/Reset CSS/reset.css">
         <link rel="icon" href="../../img/Logo.png"/>
         <link rel="stylesheet" href="../../css/login-register/login.css">
-        <title>Document</title>
+        <title>Login Client</title>
     </head>
 
     <body>
-        <div class="container">
-            <div class="header">
-                <h2>Login do cliente</h2>
+        <header>
+            <div class="logo">
+                <a href="/src/index.html">
+                    <img src="/src/img/Logo.png" alt="lobo-logo" />
+                    <h1>LOBO</h1>
+                </a>
+                <p>A maneira mais rápida, fácil e segura de fazer recarga em jogos e aplicativos</p>
             </div>
 
-            <form class="form" id="form">
-
-                <div class="form-control">
-                    <label for="Email">Email</label>
-                    <input type="email" id="Email" >
-                    <i><img class="img-success" src="../../img/login-register/error_sucess/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="../../img/login-register/error_sucess/error-icon.svg" alt=""></i>
-
-                    <small>Error message</small>
+            <div class="search">
+                <input type="search" name="search-input" placeholder="Buscar por um jogo ou voucher">
+                <ion-icon name="search-outline" class="icons-header"></ion-icon>
+            </div>
+            <div class="basket">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="header">
+                    <h2>Login do cliente</h2>
                 </div>
 
-                <div class="form-control">
-                    <label for="Password">Senha</label>
-                    <input type="password" id="Password"/>
-                    <i><img class="img-success" src="../../img/login-register/error_sucess/success-icon.svg" alt=""></i>
-                    <i><img class="img-error" src="../../img/login-register/error_sucess/error-icon.svg" alt=""></i>
+                <form class="form" id="form">
+                    <div class = "form-control">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email"/>
 
-                    <small>Error message</small>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class ="form-control">
+                        <label for="Password">Senha</label>
+                        <input type="password" id="Password"/>
+
+                        <small>Error message</small>
+                    </div>
+
+                    <p class="text_register">Não tem uma conta? <a href="./register.html">Registre-se aqui</a></p>
+                    <button type="submit">Login</button>
+                    <p class="recover_password">Esqueceu sua senha? <a href="">Recupere aqui.</a></p>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-pt2">
+                <div class="ajuda">
+                    <h1 class="ajuda-title">Precisa de ajuda?</h1>
+                    <div class="ajuda-button">
+                        <a href="#">
+                            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                            <p>Central de ajuda!</p>
+                        </a>
+                    </div>
                 </div>
 
-                <p class="text_register">Não tem uma conta? <a href="./register.html">Registre-se aqui</a></p>
-                <button type="submit" >ENVIAR</button>
-                <p class="recover_password">Esqueceu sua senha? <a href="">Recupere aqui.</a></p>
-            </form>
-        </div>
+                <div class="Pais">
+                    <h1 class="Pais-title">Brasil</h1>
+                    <div class="Pais-button">
+                        <a href="#">
+                            <ion-icon name="globe-outline"></ion-icon>
+                            <p>Brasil</p>
+                        </a>
+                    </div>
+                </div>
 
-        <script type="text/javascript" src="../../js/login-register/login.js"></script>
+                <div class="creditos">
+                    <h1 class="creditos-title">Créditos</h1>
+                    <div class="creditos-button">
+                        <a href="/src/pages/aboutus/aboutus.html">
+                            <ion-icon name="thumbs-up-outline"></ion-icon>
+                            <p>Clique Aqui</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-pt3">
+                <p>&copy; Copyright Lobo Payments</p>
+                <img src="/src/img/Logo.png" alt="lobo-logo" />
+            </div>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript" src="/src/js/login-register/login.js"></script>
     </body>
 </html>
