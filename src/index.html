@@ -25,8 +25,9 @@
                 <input type="search" name="search-input" placeholder="Buscar por um jogo ou voucher">
                 <ion-icon name="search-outline" class="icons-header"></ion-icon>
             </div>
-            <div class="notifications">
-                <ion-icon name="notifications-outline" class="icons-header"></ion-icon>
+            <div class="basket">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+            </div>
             </div>
             <div class="login_icon">
                 <a href="../src/pages/login-register/login.html" style="color: unset;"><ion-icon name="person-circle-outline" id="login_icon"></ion-icon></a>
@@ -34,12 +35,48 @@
         </header>
 
         <main class="main">
-            <div class="advertisement">
-                <img src="/src/img/products/disponiveis na lobo(icons)/product page/advertisement.jpg" alt="advertisement-img">
-                <div class="rolamento">
-                    <p>.</p>
-                    <p>.</p>
-                    <p>.</p>
+            <div class="slider">
+                <div class="slides">
+                    <!--Radio Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--Fim Radio Buttons-->
+
+                    <!--Slides IMGS-->
+                    <div class="slide first">
+                        <img src="./img/slide/slide1.png" alt="slide1">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./img/slide/slide2.png" alt="slide2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./img/slide/slide3.jpg" alt="slide3">
+                    </div>
+
+                    <div class="slide">
+                        <img src="./img/slide/slide4.jpg" alt="slide4">
+                    </div>
+                    <!--Fim Slides IMGS-->
+
+                    <!--Navigation Auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
                 </div>
             </div>
 
@@ -358,5 +395,6 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script type="text/javascript" src="/JS/main.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
