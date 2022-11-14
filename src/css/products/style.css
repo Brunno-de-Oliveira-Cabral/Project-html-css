@@ -1,0 +1,98 @@
+.flex {
+    display: flex;
+    margin-top: 30px;
+}
+
+.flex .left-container{
+    border: none;
+}
+.banner { 
+    border-radius: 10px;
+     border: 5px solid;
+     height: fit-content;
+     width: 40vw;
+     margin-top: 200px;
+     margin: 10px;
+     margin-left: 100px;
+        
+}
+
+.descricao {
+    color: rgb(252, 255, 254);
+    font-family: NotoSans-Regular,sans-serif;
+     padding: 10px;
+     padding-left: 20px;
+     height: fit-content;
+     width: 30vw;
+     margin: 1px;
+     margin-left: 100px;
+}
+
+.descricao .itens-list {
+    
+    display: flex;
+    justify-content: end;
+}
+.left-container .icon{
+    border-radius: 10px;
+    background-color: rgb(205, 211, 216);
+    margin-left: 140px;
+    display: flex;
+    border: 3px solid;
+    justify-content: center;
+    width: 100px;
+}
+
+.flex .right-container {
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 180px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.coins {
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.id {
+    padding: 10px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 3px solid black ;
+    background-color: rgb(255, 255, 255);
+}
+
+.cards {
+    gap: 10px;
+    align-items: top;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid;
+    border-radius: 10px;
+    background-color: rgb(65, 4, 97);
+    box-shadow: 0 4px 8px 0 rgba(144, 23, 23, 0.2);
+    max-width: 360px;
+    padding-left: 120px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-right: 70px;
+    text-align: center;
+    font-family: arial;
+  }
+  .cards .card {
+    color: rgb(237, 222, 222);
+    gap: 10px;
+  }
+
+img {
+    background-color: white;
+    border-radius: 10px;
+    height: 100px
+}
+  
+ 
