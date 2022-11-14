@@ -1,76 +1,197 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #280031;
-}
-
-form {
-    background-color: white;
-    max-width: 500px;
-    width: 70%;
-    padding: 20px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-form h3 {
-    text-align: center;
-    color: firebrick;
+    max-width: 100vw;
+    height: 100vh;
+    background: #280031;
     font-family: cursive;
-    font-size: 35px;
-    padding: 0px 0px 35px 0px;
+    align-items: center;
+    justify-content: center;
 
+    border: 0;
 }
 
-form input[type=email],
-input[type=password] {
-    width: 100%;
-    height: 45px;
-    border: 1px solid #ccc;
-    padding-left: 10px;
-    margin: 10px 0px;
-    outline: 0px;
-    border-radius: 10px;
+header {
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-form input[type=submit] {
-    width: 100%;
-    height: 40px;
+ion-icon {
+    font-size: 2rem;
+    text-overflow: none;
+    margin: 0px 8px;
     cursor: pointer;
-    background: #c03a3a;
-    color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    margin-right: 1.3rem;
+    margin-left: 1.6rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo h1{
+    font-size: 1.6rem;
+}
+
+.logo p{
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: helvetica;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    border: 2px solid #fdfdfd;
+    border-radius: 6px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.search:hover{
+    border-color: #280031;
+}
+
+.search input{
+    height: 1.8rem;
+    width: 20rem;
+    padding: 4px 6px;
     border: 0px;
-    border-radius: 20px;
-
+    outline: 0px;
 }
 
-form input[type=email] {
-    background-image: url("../../img/login-register/mail-outline.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 25px;
-    padding: 0px 40px;
-    background-position-x: 10px;
+/*==================================================================== Main ====================================================================*/
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #3E445B;
+    width: 35vw;
+    margin: 150px auto;
 }
 
-form input[type=password] {
-    background-image: url("../../img/login-register/lock-closed-outline.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 25px;
-    padding: 0px 40px;
-    background-position-x: 10px;
+.header {
+    padding: 30px 40px;
+}
+
+.header h2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.userInvalided{
+    display: none;
+}
+
+.userError.login_invalided{
+    text-align: center;
+    margin: 30px 0px 40px;
+}
+
+.userError.login_invalided small{
+    border: 2px #000 solid;
+    color: #fff;
+    background-color: #f00;
+    border-radius: 10px;
+    filter: saturate(50%);
+    padding: 1rem 6rem;
+}
+
+.form {
+    width: 30rem;
+    margin: auto;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-control input {
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    outline: 0;
+
+    display: block;
+
+    font-size: 18px;
+    padding: 0px 10px;
+
+    width: 29.5rem;
+    height: 2.5rem;
+}
+
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
+
+.form button {
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 25vw;
+
+    cursor: pointer;
 }
 
 form p {
     font-family: cursive;
     padding-left: 10px;
+    margin: 10px 10px;
+}
+
+.form button:hover {
+    background-color: #584ff5;
+    transition: 0.3s;
 }
 
 .recover_password,
@@ -78,4 +199,126 @@ form p {
     text-align: center;
     font-size: 15px;
     padding: 10px 0px;
+}
+
+/*======================================================= ESTILO DO FOOTER (index.html) =======================================================*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-pt2{
+    width: 100vw;
+    height: 10vh;
+    background-color: #fafa47;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+ 
+.ajuda{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.5rem;
+}
+
+.ajuda-title{
+    color: #280031;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+}
+
+.ajuda-button a{
+    display: flex;
+    background-color:  rgb(203, 221, 5);
+    border: 1px solid  rgb(203, 221, 5);
+    padding: 3px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000000;
+    transition: .4s;
+}
+
+.ajuda-button a:hover{
+    border: 1px solid #59086b;
+}
+
+.Pais{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Pais-title{
+    color: #280031;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+}
+
+.Pais-button a{
+    display: flex;
+    background-color:  #cbdd05;
+    border: 1px solid  #cbdd05;
+    padding: 3px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000000;
+    transition: .4s;
+}
+
+.Pais-button a:hover{
+    border: 1px solid #59086b;
+}
+
+.creditos{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.creditos-title{
+    color: #280031;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+}
+
+.creditos-button a{
+    display: flex;
+    background-color:  #cbdd05;
+    border: 1px solid  #cbdd05;
+    padding: 3px;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000000;
+    transition: .4s;
+}
+
+.creditos-button a:hover{
+    border: 1px solid #59086b;
+}
+
+.footer-pt3{
+    width: 100vw;
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-pt3 p{
+    margin-left: 6.2rem;
+}
+
+.footer-pt3 img{
+    width: 60px;
+    height: 60px;
+    margin-right: 6.2rem;
 }

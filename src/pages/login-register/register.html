@@ -8,31 +8,138 @@
         <title>Document</title>
     </head>
     <body>
-        <form action="../../index.html">
-            <h3>Criar seu cadastro</h3>
-            <p>Endereço de e-mail</p>
-            <input type="email" name="Email" placeholder="Seu email..." />
-            <p>Senha</p>
-            <input type="password" name="password" placeholder="Sua senha..." />
-            <p id="obs_password">A senha deve conter pelo menos 8 caracteres, incluindo pelo menos 1 número</p>
-            <p>confirmar senha</p>
-            <input type="password" name="confirm_password" placeholder="Repita sua senha..." />
-            <p>Nome</p>
-            <input type="text" name="first_name" placeholder="Seu nome">
-            <p>Sobreome</p>
-            <input type="text" name="last_name" placeholder="Seu sobrenome">
-            <p>Número de celular</p>
-            <input type="tel" name="last_name" placeholder="Seu número de celular">
-            <p>Data de nascimento</p>
-            <input type="date" name="birth_date">
-            <p>CPF</p>
-            <input type="text" name="CPF" placeholder="Seu CPF">
-            <div class="notification">
-                <input type="checkbox" name="checkbox_register" id="checkbox_notification">
-                <label for="checkbox_notification">Eu quero ser o primeiro a receber descontos, promoções e novidades</label>
+        <header>
+            <div class="logo">
+                <a href="/src/index.html">
+                    <img src="../../img/Logo.png" alt="lobo-logo" />
+                    <h1>LOBO</h1>
+                </a>
+                <p>A maneira mais rápida, fácil e segura de fazer recarga em jogos e aplicativos</p>
             </div>
-            <input type="submit" name="sub-button" value="criar seu cadastro" />
-            <p id="start_session">Já tem uma conta? <a href="./login.html">Inicie a sessão aqui</a></p>
-        </form>
+
+            <div class="search">
+                <input type="search" name="search-input" placeholder="Buscar por um jogo ou voucher">
+                <ion-icon name="search-outline" class="icons-header"></ion-icon>
+            </div>
+
+            <div class="basket">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="header">
+                    <h2>Criar seu cadastro</h2>
+                </div>
+                <form class="form" id="form">
+                    <div class="form-control">
+                        <label for="firstName">Name</label>
+                        <input type="text" id="firstName" placeholder="Nome" autocomplete="off"/>
+
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="lastName">Sobreome</label>
+                        <input type="text" id="lastName" placeholder="Sobrenome" autocomplete="off"/>
+
+                        <small>Error message</small>
+                    </div>
+                
+                    <div class="form-control">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Email" autocomplete="off"/>
+
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Email">Senha</label>
+                        <input type="password" id="Password" placeholder="Senha" autocomplete="off"/>
+
+                        <small>Error message</small>
+
+                        <p class="obs_password">A senha deve conter pelo menos 6 caracteres, incluindo pelo menos 1 número</p>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Email">Confirmar Senha</label>
+                        <input type="password" id="Password" placeholder="Confirme sua senha" autocomplete="off"/>
+
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Phone">Número de celular</label>
+                        <input type="tel" id="Phone" placeholder="Número de celular" autocomplete="off"/>
+
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="Date">Data de nascimento</label>
+                        <input type="date" id="Date" autocomplete="off"/>
+
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="CPF">CPF</label>
+                        <input type="text" id="CPF" autocomplete="off"/>
+
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="notification">
+                        <input type="checkbox" name="checkbox_register" id="checkbox_notification">
+                        <label for="checkbox_notification">Eu quero ser o primeiro a receber descontos, promoções e novidades</label>
+                    </div>
+
+                    <button type="submit" >Criar seu cadastro</button>
+                    <p id="start_session">Já tem uma conta? <a href="./login.html">Inicie a sessão aqui</a></p>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-pt2">
+                <div class="ajuda">
+                    <h1 class="ajuda-title">Precisa de ajuda?</h1>
+                    <div class="ajuda-button">
+                        <a href="#">
+                            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                            <p>Central de ajuda!</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="Pais">
+                    <h1 class="Pais-title">Brasil</h1>
+                    <div class="Pais-button">
+                        <a href="#">
+                            <ion-icon name="globe-outline"></ion-icon>
+                            <p>Brasil</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="creditos">
+                    <h1 class="creditos-title">Créditos</h1>
+                    <div class="creditos-button">
+                        <a href="/src/pages/aboutus/aboutus.html">
+                            <ion-icon name="thumbs-up-outline"></ion-icon>
+                            <p>Clique Aqui</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-pt3">
+                <p>&copy; Copyright Lobo Payments</p>
+                <img src="/src/img/Logo.png" alt="lobo-logo" />
+            </div>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
