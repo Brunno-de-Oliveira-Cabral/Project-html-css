@@ -1,18 +1,23 @@
 /* ESTILO DO HEADER(index.html)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #280031;
+    width: 100vw;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     background-color: white;
     display: flex;
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
 }
-
 
 ion-icon {
     font-size: 1.6rem;
@@ -34,22 +39,22 @@ ion-icon {
     text-decoration: none;
     color: #000000;
 }
-
 .logo h1{
     font-size: 1.6rem;
 }
-
 .logo p{
     margin-left: 10px;
     font-size: 1rem;
     font-family: helvetica;
 }
-
 .logo img {
     width: 60px;
     height: 60px;
 }
 
+.navigation{
+    display: flex;
+}
 
 .search{
     display: flex;
@@ -71,11 +76,20 @@ ion-icon {
     border: 0px;
     outline: 0px;
 }
+.login_icon a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
+#search-mobile input{
+    display: none;
+}
 
 /* ESTILO DO MAIN (index.html)*/
 
 .main{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,94 +98,6 @@ ion-icon {
 
 .main a{
     text-decoration: none;
-}
-
-.slider{
-    margin: 2rem auto;
-    width: 800px;
-    overflow: hidden;
-}
-.slides{
-    width: 400px;
-    height: 400px;
-    display: flex;
-}
-.slides input{
-    display: none;
-}
-.slide{
-    position: relative;
-    transition: 2s;
-}
-.slide img{
-    width: 800px;
-    height: 400px;
-}
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-.manual-btn{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.manual-btn:not(:last-child){
-    margin-right: 25px;
-}
-.manual-btn:hover{
-    background-color: #FFF;
-}
-
-#radio1:checked ~ .first{
-    margin: 0;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #FFF;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -200%;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #FFF;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -400%;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #FFF;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -600%;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #FFF;
-}
-
-.navigation-auto div{
-    border: 2px solid #20a6ff;
-    border-radius: 10px;
-    padding: 5px;
-    cursor: pointer;
-    transition: 1s;
-}
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-.navigation-auto div:not(:last-child){
-    margin-right: 25px;
 }
 
 .main-cards{
@@ -225,15 +151,113 @@ ion-icon {
     font-weight: bold;
 }
 
+
+.slider{
+    margin: 2rem auto;
+    width: 800px;
+    overflow: hidden;
+}
+.slides{
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 400px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 25px;
+}
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin: 0;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #FFF;
+}
+#radio2:checked ~ .first{
+    margin-left: -200%;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #FFF;
+}
+#radio3:checked ~ .first{
+    margin-left: -400%;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #FFF;
+}
+#radio4:checked ~ .first{
+    margin-left: -600%;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #FFF;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 25px;
+}
+
 /* ESTILO DO FOOTER (index.html)*/
 
 footer{
+    width: 100vw;
     margin-top: 4rem;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.footer-clipPath{
+    display: flex;
+    padding: 0;
+    margin-top: -39px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(250, 250, 71);
+    clip-path: polygon(0 23%,6% 72%,12% 47%,18% 70%,24% 51%,32% 80%,38% 47%,44% 80%,50% 49%,56% 70%,60% 86%,66% 42%,72% 65%,78% 38%,84% 64%,90% 17%,96% 20%,100% 1%,100% calc(100% + 1px),0 calc(100% + 1px));
+   }
 
 .footer-pt1{
     display: flex;
@@ -414,181 +438,577 @@ footer{
     margin-right: 6.2rem;
 }
 
-@media (max-width: 1130px){
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1441px) {
+    /* ESTILO DO HEADER(index.html)*/
+
+    .navigation{
+        align-items: center;
+    }
+
+    .navigation .login_icon ion-icon{
+        font-size: 1.9rem;
+    }
+
+    /* ESTILO DO MAIN(index.html)*/
+
+    .main-cards .cards .card{
+        width: 15.95%;
+        height: 250px;
+    }
+
+    .main-cards .cards .card .card-title{
+        padding-top: 17px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1151px){
     .logo p{
         display: none;
     }
 
+    .main-cards .cards .card{
+        width: 19%;
+    }
+}
+
+@media(max-width:1025px){
+
+    /* ESTILO DO HEADER(index.html)*/
+
+    .logo p{
+        display: none;
+    }
+
+    /* ESTILO DO MAIN(index.html)*/
+
+    .main-cards .cards{
+        width: 100%;
+    }
+
+    .main-cards .cards .card{
+        width: 15.6%;
+        height: 190px;
+    }
+
+    .main-cards .cards .card .card-title{
+        padding-top: 10px;
+        font-size: 0.8rem;
+    }
+
+    /* ESTILO DO FOOTER(index.html)*/
+
     .beneficio ion-icon{
-        padding: 20px 25px;
-    }
-}
-
-@media (max-width: 1000px){
-    .main-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 900px){
-    header{
-        display: flex;
-    }
-
-    .search ion-icon{
-        display: none;
+        width: 10%;
+        padding: 20px;
+        background-color: #fdfdfd;
+        border-radius: 35px;
+        color: rgb(0, 98, 255);
     }
     
+    .beneficio .grande{
+        width: 13.2%;
+    }
+}
+
+@media(max-width: 901px){
     .logo{
-        display: flex;
-        align-items: center;
-        margin-left: 6rem;
-    }
-    
-    .logo a{
-        display: flex;
-        align-items: center;
-        margin-right: 1.3rem;
-        margin-left: 1.6rem;
-        text-decoration: none;
-        color: #000000;
-    }
-    
-    .logo h1{
-        font-size: 2rem;
+        margin-right: 5rem;
     }
 
-    .search input{
-        display: none;
-    }    
+    .main-cards .cards .card{
+        width: 23.9%;
+        height: 250px;
+    }
+
+    .main-cards .cards .card .card-title{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 826px){
+    .main-cards .cards .card{
+        height: 230px;
+    }
 
     .slider{
-        width: 600px;
-        height: 300px;
+        width: 620px;
+    }
+
+    .slides{
+        width: 310px;
+        height: 310px;
     }
 
     .slide img{
-        width: 600px;
-        height: 300px;
-    }
-
-        
-    #radio1:checked ~ .first{
-        margin: 0;
-    }
-
-    #radio2:checked ~ .first{
-        margin-left: -150%;
-    }
-
-    #radio3:checked ~ .first{
-        margin-left: -300%;
-    }
-
-    #radio4:checked ~ .first{
-        margin-left: -450%;
+        width: 620px;
+        height: 310px;
     }
 
     .manual-navigation{
-        display: none;
+        width: 620px;
     }
 
     .navigation-auto{
-        display: none;
-    }
-
-    .footer-beneficios{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }    
-
-    .beneficio{
-        width: 70%;
+        width: 620px;
+        margin-top: 270px;
     }
 }
 
-@media (max-width: 770px){
-    .main-cards .cards .card{
-        width: 250px;
-        height: 320px;
-    }
-}
+@media (max-width: 769px){
 
-@media (max-width: 650px){
-    header .menu-outline {
+    /* ESTILO DO HEADER(index.html)*/
+        
+    header {
+        justify-content: space-between;
+    }
+
+    .navigation{
+        padding: 0;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+    .logo a{
+        margin: 0;
+    }
+    .logo p{
         display: none;
     }
+
+    /* ESTILO DO MAIN (index.html)*/
 
     .slider{
-        width: 450px;
-        height: 250px;
+        width: 550px;
+    }
+
+    .slides{
+        width: 275px;
+        height: 275px;
+        display: flex;
     }
 
     .slide img{
-        width: 450px;
-        height: 250px;
+        width: 550px;
+        height: 275px;
     }
 
-    #radio1:checked ~ .first{
-        margin: 0;
+    .manual-navigation{
+        width: 550px;
     }
 
-    #radio2:checked ~ .first{
-        margin-left: -112.5%;
+    .navigation-auto{
+        width: 550px;
+        margin-top: 235px;
     }
 
-    #radio3:checked ~ .first{
-        margin-left: -225%;
+    .main-cards{
+        width: 100vw;
+        margin-top: 2rem;
     }
-
-    #radio4:checked ~ .first{
-        margin-left: -337.5%;
-    }
-
 
     .main-cards .title{
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 590px){
-
-    header .logo{
-        margin-left: 0;
+        font-size: 1.6rem;
     }
 
-    .main-cards .cards .card{
-        width: 300px;
-        height: 370px;
+    .main-cards .cards{
+        width: 99%;
+    }
+
+    .main-cards .cards .card {
+        width: 18%;
+        height: 180px;
+    }
+
+    .main-cards .cards .card .card-title{
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* ESTILO DO FOOTER (index.html)*/
+
+    .footer-pt1{
+        width: 100vw;
+    }
+
+    .beneficio ion-icon{
+        width: 13%;
+    }
+
+    .beneficio .grande{
+        width: 18%;
     }
 
     .footer-pt2{
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        min-height: 230px;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .ajuda{
         margin: 0;
     }
 
+    .Pais{
+        margin: 1rem 0 0;
+
+    }
+
+    .creditos{
+        margin: 1rem 0 0;
+    }
+
     .footer-pt3{
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-pt3 p{
+        margin-left: 0rem;
+    }
+    
+    .footer-pt3 img{
+        margin-right: 0rem;
+    }
+    
+}
+
+@media (max-width: 676px){
+
+    /* ESTILO DO HEADER(index.html)*/
+
+    .search input{
+        display: none;
+    }
+
+    /*ESTILO SEARCH MOBILE (index.html)*/
+
+    #search-mobile{
+        visibility: hidden;
+        background-color: #fff;
+        height: 2.3rem;
+        width: 100vw;
+        display: flex;
         justify-content: center;
+        padding: 5px;
+        transition: .1s;
+    }
+    #search-mobile input{
+        display:block;
+        height: 1.6rem;
+        width: 96%;
+        padding: 4px 6px;
+        outline: 0px;
+        border: 1px solid #280031;
+        border-radius: 5px;
+    }
+
+    /*ESTILO MAIN (index.html)*/
+
+    .main-cards .cards .card{
+        width: 23.6%;
+        height: 210px;
+    }
+
+    .main-cards .cards .card .card-title{
+        margin-top: 5px;
+        font-size: 0.9rem;
+    }
+
+    /*ESTILO FOOTER (index.html)*/
+
+    .beneficio ion-icon{
+        width: 17%;
+    }
+
+    .beneficio .grande{
+        width: 23%;
     }
 }
 
-@media (max-width: 460px){
+@media (max-width: 571px){
+    /* ESTILO DO MAIN (index.html)*/
+
+    .main-cards .cards .card{
+        width: 32%;
+        height: 250px;
+    }
+
+    .slider{
+        width: 450px;
+    }
+
+    .slides{
+        width: 225px;
+        height: 225px;
+    }
+
+    .slide img{
+        width: 450px;
+        height: 225px;
+    }
+
+    .manual-navigation{
+        width: 450px;
+    }
+
+    .navigation-auto{
+        width: 450px;
+        margin-top: 185px;
+    }
+}
+
+@media(max-width: 501px){
+    /* ESTILO DO MAIN (index.html)*/
+
+    .main-cards .cards .card{
+        width: 31.5%;
+        height: 210px;
+    }
+
+    .slider{
+        width: 400px;
+    }
+
+    .slides{
+        width: 200px;
+        height: 200px;
+    }
+
+    .slide img{
+        width: 400px;
+        height: 200px;
+    }
+
+    .manual-navigation{
+        width: 400px;
+    }
+
+    .navigation-auto{
+        width: 400px;
+        margin-top: 160px;
+    }
+
+    /* ESTILO DO FOOTER (index.html)*/
+
+    .beneficio ion-icon{
+        width: 32%;
+    }
+
+    .beneficio .grande{
+        width: 48%;
+    }
+}
+
+@media (max-width: 426px){
+
+    /* ESTILO DO HEADER(index.html)*/
+
+    body{
+        width: 100vw;
+    }
+        
+    header {
+        justify-content: space-between;
+    }
+
+    .navigation{
+        padding: 0;
+    }
+
     .logo{
         margin-right: 0;
     }
+    .logo a{
+        margin: 0;
+    }
+    .logo p{
+        display: none;
+    }
+
+    .search input{
+        display: none;
+    }
+
+    /*ESTILO SEARCH MOBILE (index.html)*/
+
+    #search-mobile{
+        visibility: hidden;
+        background-color: #fff;
+        height: 2.3rem;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        transition: .1s;
+    }
+    #search-mobile input{
+        display:block;
+        height: 1.6rem;
+        width: 96%;
+        padding: 4px 6px;
+        outline: 0px;
+        border: 1px solid #280031;
+        border-radius: 5px;
+    }
+
+    /* ESTILO DO MAIN (index.html)*/
+
     .slider{
         display: none;
     }
+
+    .main-cards{
+        width: 100vw;
+        margin-top: 2rem;
+    }
+
+    .main-cards .title{
+        font-size: 1.6rem;
+    }
+
+    .main-cards .cards .card {
+        width: 31%;
+        height: 180px;
+    }
+
+    .main-cards .cards .card .card-title{
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* ESTILO DO FOOTER (index.html)*/
+
+    .footer-pt1{
+        width: 100vw;
+    }
+
+    .footer-beneficios{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .beneficio{
+        width: 100%;
+    }
+
     .beneficio ion-icon{
-        display: none;
+        width: 10%;
+    }
+
+    .beneficio .grande{
+        width: 12.6%;
+    }
+
+    .footer-pt2{
+        min-height: 230px;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ajuda{
+        margin: 0;
+    }
+
+    .Pais{
+        margin: 1rem 0 0;
+
+    }
+
+    .creditos{
+        margin: 1rem 0 0;
+    }
+
+    .footer-pt3{
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-pt3 p{
+        margin-left: 0rem;
+    }
+    
+    .footer-pt3 img{
+        margin-right: 0rem;
+    }
+    
+}
+
+@media(max-width: 376px){
+
+    /*ESTILO DO MAIN (index.html)*/
+    header{
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-bottom: 0.5rem;
+    }
+
+    .navigation{
+        border-top: 1px solid #d3d3d3;
+        padding-top: 0.5rem;
+    }
+
+    /* ESTILO DO MAIN (index.html)*/
+    .main-cards .title{
+        font-size: 1.3rem;
+    }
+
+    .main-cards .cards .card {
+        width: 31%;
+        height: 160px;
+    }
+
+    .main-cards .cards .card .card-title{
+        padding-top: 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    /* ESTILO DO FOOTER (index.html)*/
+
+    .beneficio ion-icon{
+        width: 14%;
+    }
+
+    .beneficio .grande{
+        width: 17%;
     }
 }
+
+@media(max-width: 321px){
+
+    /* ESTILO DO MAIN (index.html)*/
+    .main-cards .title{
+        font-size: 1.6rem;
+    }
+
+    .main-cards .cards .card {
+        width: 45%;
+        height: 200px;
+    }
+
+    .main-cards .cards .card .card-title{
+        padding-top: 0;
+        font-size: 1rem;
+    }
+
+    /* ESTILO DO FOOTER (index.html)*/
+    .beneficio ion-icon{
+        width: 20%;
+    }
+
+    .beneficio .grande{
+        width: 26%;
+    }
+}
+
