@@ -54,6 +54,7 @@ ion-icon {
 
 .navigation{
     display: flex;
+    align-items: center;
 }
 
 .search{
@@ -1011,3 +1012,4 @@ footer{
         width: 26%;
     }
 }
+

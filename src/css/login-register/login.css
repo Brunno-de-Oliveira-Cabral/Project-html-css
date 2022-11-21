@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    height: 5rem;
+    width: 100vw;
     background-color: white;
     display: flex;
     padding: 10px 20px;
@@ -25,8 +25,7 @@ header {
 }
 
 ion-icon {
-    font-size: 2rem;
-    text-overflow: none;
+    font-size: 1.6rem;
     margin: 0px 8px;
     cursor: pointer;
 }
@@ -34,7 +33,7 @@ ion-icon {
 .logo{
     display: flex;
     align-items: center;
-    margin: 1rem;
+    margin-right: 10rem;
 }
 
 .logo a{
@@ -45,22 +44,23 @@ ion-icon {
     text-decoration: none;
     color: #000000;
 }
-
 .logo h1{
     font-size: 1.6rem;
 }
-
 .logo p{
-    margin-left: 1rem;
+    margin-left: 10px;
     font-size: 1rem;
     font-family: helvetica;
 }
-
 .logo img {
     width: 60px;
     height: 60px;
 }
 
+.navigation{
+    display: flex;
+    align-items: center;
+}
 
 .search{
     display: flex;
@@ -82,8 +82,26 @@ ion-icon {
     border: 0px;
     outline: 0px;
 }
+.login_icon a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.login_icon a ion-icon{
+    font-size: 1.6rem;
+}
+
+#search-mobile input{
+    display: none;
+}
+
 
 /*==================================================================== Main ====================================================================*/
+
+main{
+    width: 100vw;
+}
 
 .container {
     background-color: white;
@@ -122,11 +140,15 @@ ion-icon {
 }
 
 .form {
-    width: 30rem;
+    width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-control {
+    width: 100%;
     margin-bottom: 10px;
     padding-bottom: 20px;
 }
@@ -147,7 +169,7 @@ ion-icon {
     font-size: 18px;
     padding: 0px 10px;
 
-    width: 29.5rem;
+    width: 100%;
     height: 2.5rem;
 }
 
@@ -178,14 +200,13 @@ ion-icon {
     padding: 15px;
     font-size: 15px;
     font-weight: 600;
-    width: 25vw;
+    width: 78%;
 
     cursor: pointer;
 }
 
 form p {
     font-family: cursive;
-    padding-left: 10px;
     margin: 10px 10px;
 }
 
@@ -204,20 +225,98 @@ form p {
 /*======================================================= ESTILO DO FOOTER (index.html) =======================================================*/
 
 footer{
+    width: 100vw;
+    margin-top: 4rem;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.footer-clipPath{
+    display: flex;
+    padding: 0;
+    margin-top: -39px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(250, 250, 71);
+    clip-path: polygon(0 23%,6% 72%,12% 47%,18% 70%,24% 51%,32% 80%,38% 47%,44% 80%,50% 49%,56% 70%,60% 86%,66% 42%,72% 65%,78% 38%,84% 64%,90% 17%,96% 20%,100% 1%,100% calc(100% + 1px),0 calc(100% + 1px));
+   }
+
+.footer-pt1{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10px;
+}
+
+.footer-pt1 .footer-title{
+    font-family: 'Roboto';
+    color: #fdfdfd;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.footer-pt1 .footer-subtitle{
+    font-family: 'Roboto';
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-pt1 .footer-text{
+    color: #fdfdfd;
+    margin-bottom: 1rem;
+}
+
+.footer-beneficios{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beneficio{
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.beneficio ion-icon{
+    width: 4%;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 35px;
+    color: rgb(0, 98, 255);
+}
+
+.beneficio .grande{
+    width: 5.3%;
+}
+
+.beneficio-texts-title{
+    margin-bottom: 10px;
+    color: #fdfdfd;
+    font-family: 'Roboto';
+}
+
+.beneficio-texts-text{
+    color: #fdfdfd;
+}
+
+
 .footer-pt2{
-    width: 100vw;
-    height: 10vh;
-    background-color: #fafa47;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(250, 250, 71);
     display: flex;
     align-items: center;
     padding-left: 30px;
 }
- 
+
 .ajuda{
     display: flex;
     flex-direction: column;
@@ -262,8 +361,8 @@ footer{
 
 .Pais-button a{
     display: flex;
-    background-color:  #cbdd05;
-    border: 1px solid  #cbdd05;
+    background-color:  rgb(203, 221, 5);
+    border: 1px solid  rgb(203, 221, 5);
     padding: 3px;
     align-items: center;
     text-decoration: none;
@@ -291,8 +390,8 @@ footer{
 
 .creditos-button a{
     display: flex;
-    background-color:  #cbdd05;
-    border: 1px solid  #cbdd05;
+    background-color:  rgb(203, 221, 5);
+    border: 1px solid  rgb(203, 221, 5);
     padding: 3px;
     align-items: center;
     text-decoration: none;
@@ -306,7 +405,8 @@ footer{
 }
 
 .footer-pt3{
-    width: 100vw;
+    width: 100%;
+    height: 6rem;
     background-color: #fdfdfd;
     display: flex;
     align-items: center;
@@ -321,4 +421,149 @@ footer{
     width: 60px;
     height: 60px;
     margin-right: 6.2rem;
+}
+
+/*======================================================= RESPONSIVIDADE =======================================================*/
+
+@media (max-width: 1441px){
+    /* ESTILO DO HEADER(index.html)*/
+
+    .logo{
+        margin-right: 5rem;
+    }
+
+    .navigation{
+        align-items: center;
+    }
+
+    .navigation .login_icon ion-icon{
+        font-size: 1.9rem;
+    }
+
+    .navigation .login_icon a ion-icon{
+        font-size: 1.7rem;
+    }
+
+    .container{
+        width: 50vw;
+    }
+
+}
+
+@media (max-width: 1025px){
+    .logo p{
+        display: none;
+    }
+}
+
+@media (max-width: 901px){
+    .container {
+        width: 50vw;
+    }
+}
+
+@media (max-width:850px){
+    .logo{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .container {
+        width: 65vw;
+    }
+
+    .search input{
+        display: none;
+    }
+
+    #search-mobile{
+        visibility: hidden;
+        background-color: #fff;
+        height: 2.3rem;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        transition: .1s;
+    }
+    #search-mobile input{
+        display:block;
+        height: 1.6rem;
+        width: 96%;
+        padding: 4px 6px;
+        outline: 0px;
+        border: 1px solid #280031;
+        border-radius: 5px;
+    }
+
+    .navigation{
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 600px){
+    .ajuda{
+        margin-left: 0;
+    }
+
+    .footer-pt3 p{
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 476px){
+    .container{
+        width: 85vw;
+    }
+
+    .navigation{
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 401px){
+    .footer-pt2{
+        min-height: 240px;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ajuda{
+        margin: 0;
+    }
+
+    .Pais{
+        margin: 1rem 0 0;
+
+    }
+
+    .creditos{
+        margin: 1rem 0 0;
+    }
+
+}
+
+@media (max-width: 376px){
+
+    header{
+        flex-direction: column;
+    }
+
+    .header h2 {
+        font-size: 25px;
+    }
+
+    .form-control input {
+        height: 2rem;
+    }
+
+    .form button {
+        padding: 10px 15px;
+    }
+
+    .container {
+        margin: 110px auto;
+    }
 }

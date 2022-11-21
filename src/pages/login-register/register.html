@@ -5,27 +5,39 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../css/login-register/register.css  ">
-        <title>Document</title>
+        <title>Lobo Registre-se | Recarga de Jogos e Apps</title>
     </head>
     <body>
         <header>
             <div class="logo">
                 <a href="/src/index.html">
-                    <img src="../../img/Logo.png" alt="lobo-logo" />
+                    <img src="/src/img/Logo.png" alt="lobo-logo" />
                     <h1>LOBO</h1>
                 </a>
                 <p>A maneira mais rápida, fácil e segura de fazer recarga em jogos e aplicativos</p>
             </div>
-
-            <div class="search">
-                <input type="search" name="search-input" placeholder="Buscar por um jogo ou voucher">
-                <ion-icon name="search-outline" class="icons-header"></ion-icon>
-            </div>
-
-            <div class="basket">
-                <ion-icon name="bag-handle-outline"></ion-icon>
+            
+            <div class="navigation">
+                <div class="search">
+                    <input type="search" name="search-input" placeholder="Buscar por um jogo ou voucher">
+                    <a id="btnMobile"><ion-icon name="search-outline" class="icons-header" ></ion-icon></a>
+                </div>
+                <div class="basket">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+                </div>
+                <div class="login_icon">
+                        <ion-icon name="person-circle-outline" id="login_icon"></ion-icon>
+                </div>
+                <p class="login-text">
+                    Peter Parker
+                </p>
             </div>
         </header>
+
+        <div id="search-mobile">
+            <input type="text" placeholder="Buscar por um jogo ou voucher">
+        </div>
+
         <main>
             <div class="container">
                 <div class="header">
@@ -101,6 +113,7 @@
             </div>
         </main>
         <footer>
+            <div class="footer-clipPath"></div>
             <div class="footer-pt2">
                 <div class="ajuda">
                     <h1 class="ajuda-title">Precisa de ajuda?</h1>
@@ -141,5 +154,6 @@
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="/src/js/register.js"></script>
     </body>
 </html>
