@@ -141,6 +141,24 @@ ion-icon {
     border: 3px solid #DB5A5A;
 }
 
+.userInvalided{
+    display: none;
+}
+
+.userError.login_invalided{
+    text-align: center;
+    margin: 30px 0px 40px;
+}
+
+.userError.login_invalided small{
+    border: 2px #000 solid;
+    color: #fff;
+    background-color: #f00;
+    border-radius: 10px;
+    filter: saturate(50%);
+    padding: 1rem 6rem;
+}
+
 .form-control.error small{
     color: #DB5A5A;
     visibility: visible;

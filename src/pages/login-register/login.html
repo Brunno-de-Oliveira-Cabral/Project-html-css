@@ -35,25 +35,29 @@
                     <h2>Login do cliente</h2>
                 </div>
 
+                <div class="userInvalided" id="errorLogin">
+                    <small>Message Error</small>
+                </div>
+
                 <form class="form" id="form">
                     <div class = "form-control">
                         <label for="Email">Email</label>
-                        <input type="email" id="Email"/>
-
+                        <input type="email" id="Email" name="Email"/>
                         <small>Error message</small>
                     </div>
 
                     <div class ="form-control">
                         <label for="Password">Senha</label>
-                        <input type="password" id="Password"/>
+                        <input type="password" id="Password" name="Password"/>
 
                         <small>Error message</small>
                     </div>
 
                     <p class="text_register">Não tem uma conta? <a href="./register.html">Registre-se aqui</a></p>
-                    <button type="submit">Login</button>
+                    <button type="submit" form="form">Login</button>
                     <p class="recover_password">Esqueceu sua senha? <a href="">Recupere aqui.</a></p>
                 </form>
+                <div id="status"></div>
             </div>
         </main>
 
@@ -92,12 +96,12 @@
 
             <div class="footer-pt3">
                 <p>&copy; Copyright Lobo Payments</p>
-                <img src="img/Logo.png" alt="lobo-logo" />
+                <img src="/src/img/Logo.png" alt="lobo-logo" />
             </div>
         </footer>
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script type="text/javascript" src="/src/js/login-register/login.js"></script>
+        <script type="text/javascript" src="../../js/search/loginCustomers.js"></script>
     </body>
 </html>

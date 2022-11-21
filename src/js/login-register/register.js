@@ -1,1 +1,0 @@
-const CPF = document.getElementById('')

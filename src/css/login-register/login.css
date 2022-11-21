@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     background: #280031;
     font-family: cursive;
@@ -16,7 +16,6 @@ body {
 }
 
 header {
-    width: 100%;
     height: 5rem;
     background-color: white;
     display: flex;
@@ -25,9 +24,9 @@ header {
     align-items: center;
 }
 
-
 ion-icon {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    text-overflow: none;
     margin: 0px 8px;
     cursor: pointer;
 }
@@ -35,7 +34,7 @@ ion-icon {
 .logo{
     display: flex;
     align-items: center;
-    margin-right: 10rem;
+    margin: 1rem;
 }
 
 .logo a{
@@ -52,7 +51,7 @@ ion-icon {
 }
 
 .logo p{
-    margin-left: 10px;
+    margin-left: 1rem;
     font-size: 1rem;
     font-family: helvetica;
 }
@@ -85,13 +84,6 @@ ion-icon {
 }
 
 /*==================================================================== Main ====================================================================*/
-main {
-    width: 100%;
-    height: calc(100vh - 60px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .container {
     background-color: white;
@@ -212,22 +204,20 @@ form p {
 /*======================================================= ESTILO DO FOOTER (index.html) =======================================================*/
 
 footer{
-    margin-top: 4rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .footer-pt2{
-    width: 100%;
-    height: 150px;
-    background-color: rgb(250, 250, 71);
+    width: 100vw;
+    height: 10vh;
+    background-color: #fafa47;
     display: flex;
     align-items: center;
     padding-left: 30px;
 }
-
+ 
 .ajuda{
     display: flex;
     flex-direction: column;
@@ -272,8 +262,8 @@ footer{
 
 .Pais-button a{
     display: flex;
-    background-color:  rgb(203, 221, 5);
-    border: 1px solid  rgb(203, 221, 5);
+    background-color:  #cbdd05;
+    border: 1px solid  #cbdd05;
     padding: 3px;
     align-items: center;
     text-decoration: none;
@@ -301,8 +291,8 @@ footer{
 
 .creditos-button a{
     display: flex;
-    background-color:  rgb(203, 221, 5);
-    border: 1px solid  rgb(203, 221, 5);
+    background-color:  #cbdd05;
+    border: 1px solid  #cbdd05;
     padding: 3px;
     align-items: center;
     text-decoration: none;
@@ -316,7 +306,7 @@ footer{
 }
 
 .footer-pt3{
-    width: 100%;
+    width: 100vw;
     background-color: #fdfdfd;
     display: flex;
     align-items: center;
@@ -331,229 +321,4 @@ footer{
     width: 60px;
     height: 60px;
     margin-right: 6.2rem;
-}
-
-/*==================================================================== Responsivel ====================================================================*/
-
-@media screen and (max-width: 425px) {
-     .logo{
-        margin: 0;
-    }
-    
-    .logo h1{
-        font-size: 1.2rem;
-    }
-    
-    .logo p{
-        display: none;
-    }
-
-    .search{
-        border-radius: 6px;
-    }
-    
-    .search input{
-        width: 4rem;
-        border: 0px;
-        outline: 0px;
-    }
-
-    /*========================================================= Responsivel Main =========================================================*/
-    .container {
-        min-width: 100vw;
-        height: 100%;
-
-        border-radius: 0;
-        margin: 2rem auto;
-    }
-    
-    .header h2 {
-        font-weight: 600px;
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    .form {
-        width: 30rem;
-        margin: auto;
-    }
-    
-    .form-control {
-        margin-bottom: 10px;
-        padding-bottom: 20px;
-    }
-    
-    .form-control label {
-        display: inline-block;
-        margin-bottom: 5px;
-        font-size: 16px;
-
-        margin-left: 2rem;
-    }
-
-    .form-control input {
-        width: 80vw;
-        height: 2.5rem;
-
-        margin-left: 2rem;
-
-        font-size: 14px; 
-    }
-    
-    .form-control small {
-        visibility: hidden;
-        position: absolute;
-        margin-top: 0.5rem;
-        font-size: 12px;
-    }
-    
-    .form button {
-        width: 80vw;
-
-        font-size: 15px;
-        font-weight: 600px;
-        
-        margin-left: 2rem;
-
-        cursor: pointer;
-    }
-    
-    form p {
-        font-family: cursive;
-        margin: 1rem 1rem;
-    }
-    
-    .form button:hover {
-        background-color: #584ff5;
-        transition: 0.3s;
-    }
-    
-    .recover_password,
-    .text_register {
-        text-align: start;
-        font-size: 12px;
-
-        margin-left: 6rem;
-    }
-
-    /*========================================================= Reponsivel Footer =========================================================*/
-
-    footer{
-        height: 60px;
-    }
-    
-    .footer-pt2{
-        width: 100vw;
-        height: 15vh;
-        background-color: #fafa47;
-        display: flex;
-        align-items: center;
-        padding: 0px;
-
-    }
-     
-    .ajuda{
-        display: flex;
-        flex-direction: column;
-        margin-left: 1rem;
-    }
-    
-    .ajuda-title{
-        color: #280031;
-        font-size: 1rem;
-        font-family: 'Roboto';
-        margin-bottom: 5px;
-    }
-    
-    .ajuda-button a{
-        display: flex;
-        background-color:  #cbdd05;
-        border: 1px solid  #cbdd05;
-        padding: 3px;
-        align-items: center;
-        text-decoration: none;
-        border-radius: 5px;
-        color: #000000;
-        transition: .4s;
-    }
-    
-    .ajuda-button a:hover{
-        border: 1px solid #59086b;
-    }
-    
-    .Pais{
-        margin-left: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .Pais-title{
-        color: #280031;
-        font-size: 1.2rem;
-        font-family: 'Roboto';
-        margin-bottom: 5px;
-    }
-    
-    .Pais-button a{
-        display: flex;
-        background-color:  #cadc04;
-        border: 1px solid  #cbdd05;
-        padding: 3px;
-        align-items: center;
-        text-decoration: none;
-        border-radius: 5px;
-        color: #000000;
-        transition: .4s;
-    }
-    
-    .Pais-button a:hover{
-        border: 1px solid #59086b;
-    }
-    
-    .creditos{
-        margin-left: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .creditos-title{
-        color: #280031;
-        font-size: 1.2rem;
-        font-family: 'Roboto';
-        margin-bottom: 5px;
-    }
-    
-    .creditos-button a{
-        display: flex;
-        background-color:  #cbdd05;
-        border: 1px solid  #cbdd05;
-        padding: 3px;
-        align-items: center;
-        text-decoration: none;
-        border-radius: 5px;
-        color: #000000;
-        transition: .4s;
-    }
-    
-    .creditos-button a:hover{
-        border: 1px solid #59086b;
-    }
-    
-    .footer-pt3{
-        width: 100vw;
-        background-color: #fdfdfd;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .footer-pt3 p{
-        margin-left: 1rem;
-    }
-    
-    .footer-pt3 img{
-        width: 60px;
-        height: 60px;
-        margin-right: 1rem;
-    }
 }

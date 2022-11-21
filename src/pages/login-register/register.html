@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../css/login-register/register.css  ">
+        <link rel="stylesheet" href="../../css/login-register/registe.css">
         <title>Document</title>
     </head>
     <body>
@@ -26,14 +26,20 @@
                 <ion-icon name="bag-handle-outline"></ion-icon>
             </div>
         </header>
+
         <main>
             <div class="container">
                 <div class="header">
                     <h2>Criar seu cadastro</h2>
                 </div>
+
+                <div class="userInvalided" id="errorLogin">
+                    <small>Message Error</small>
+                </div>
+                
                 <form class="form" id="form">
                     <div class="form-control">
-                        <label for="firstName">Name</label>
+                        <label for="firstName">Nome</label>
                         <input type="text" id="firstName" placeholder="Nome" autocomplete="off"/>
 
                         <small>Error message</small>
@@ -59,12 +65,12 @@
 
                         <small>Error message</small>
 
-                        <p class="obs_password">A senha deve conter pelo menos 6 caracteres, incluindo pelo menos 1 número</p>
+                        <!-- <p class="obs_password">A senha deve conter pelo menos 6 caracteres, incluindo pelo menos 1 número</p> -->
                     </div>
 
                     <div class="form-control">
                         <label for="Email">Confirmar Senha</label>
-                        <input type="password" id="Password" placeholder="Confirme sua senha" autocomplete="off"/>
+                        <input type="password" id="repeatPassword" placeholder="Confirme sua senha" autocomplete="off"/>
 
                         <small>Error message</small>
                     </div>
@@ -90,16 +96,17 @@
                         <small>Error message</small>
                     </div>
 
-                    <div class="notification">
+                    <!-- <div class="notification">
                         <input type="checkbox" name="checkbox_register" id="checkbox_notification">
                         <label for="checkbox_notification">Eu quero ser o primeiro a receber descontos, promoções e novidades</label>
-                    </div>
+                    </div> -->
 
                     <button type="submit" >Criar seu cadastro</button>
                     <p id="start_session">Já tem uma conta? <a href="./login.html">Inicie a sessão aqui</a></p>
                 </form>
             </div>
         </main>
+
         <footer>
             <div class="footer-pt2">
                 <div class="ajuda">
@@ -141,5 +148,6 @@
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript" src="../../js/search/registerCustomers.js"></script>
     </body>
 </html>
