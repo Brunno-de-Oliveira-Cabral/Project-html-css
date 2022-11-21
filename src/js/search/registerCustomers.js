@@ -19,20 +19,17 @@ Email.addEventListener('keyup', () => {
     if (validationEmail(Email.value) !== true) {
         errorValidation(Email, 'O formato do email deve ser Ex. nome@exemplo.com');
     } else {
-        const formControl = Email.parentElement;
-        formControl.className = "form-control";
+        successValidation(CPF);
     }
 });
 
 CPF.addEventListener('keyup', () => {
     if (validationCPF(CPF.value) !== true) {
-        errorValidation(Email, 'Campo invalido!');
+        errorValidation(CPF, '');
     } else {
-        const formControl = Email.parentElement;
-        formControl.className = "form-control";
+        successValidation(CPF);
     }
 });
-
 
 function validationEmail(Email) {
     let emailPattern = /\S+@\S+\.\S+/;
@@ -40,7 +37,7 @@ function validationEmail(Email) {
 }
 
 function validationCPF(CPF){
-    let CPFPattern = /([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/;
+    let CPFPattern = /(\d{3})(\d{3})(\d{3})(\d{2})/;
     return CPFPattern.test(CPF);
 }
 
@@ -50,6 +47,12 @@ function errorValidation(input, message) {
 
     formControl.className = "form-control error";
     small.innerText = message;
+}
+
+function successValidation(input){
+    const formControl = input.parentElement;
+
+    formControl.className="form-control success";
 }
 
 function checkInputs() {
@@ -90,6 +93,10 @@ function checkInputs() {
     }
     if (CPF.value === '') {
         errorValidation(CPF, 'Preencha esse campo');
+    }
+    
+    if(data.Password !== repeatPassword.value.trim()){
+        errorValidation(repeatPassword, 'Error, senha invalida');
     }
 
     if (data.firstName !== '' && data.lastName !== '' && data.Email !== '' && data.Password !== '' && data.Phone !== '' && data.birthDate != '' && data.CPF !== '') {
