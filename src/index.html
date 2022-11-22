@@ -8,13 +8,10 @@
         <link rel="icon" href="img/Logo.png"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <title>Document</title>
+        <title>Lobo Brasil | Recarga de Jogos e Apps</title>
     </head>
     <body>
         <header>
-            <div class="menu-outline">
-                <ion-icon name="menu-outline" class="icons-header"></ion-icon>
-            </div>
             <div class="logo">
                 <a href="/src/index.html">
                     <img src="img/Logo.png" alt="lobo-logo" />
@@ -23,18 +20,28 @@
                 <p>A maneira mais rápida, fácil e segura de fazer recarga em jogos e aplicativos</p>
             </div>
             
-            <div class="search">
-                <input type="search" name="search-input" placeholder="Buscar por um jogo ou voucher">
-                <ion-icon name="search-outline" class="icons-header"></ion-icon>
-            </div>
-            <div class="basket">
-                <ion-icon name="bag-handle-outline"></ion-icon>
-            </div>
-            </div>
-            <div class="login_icon">
-                <a href="../src/pages/login-register/login.html" style="color: unset;"><ion-icon name="person-circle-outline" id="login_icon"></ion-icon></a>
+            <div class="navigation">
+                <div class="search">
+                    <input type="search" name="search-input" placeholder="Buscar por um jogo ou voucher">
+                    <a id="btnMobile"><ion-icon name="search-outline" class="icons-header" ></ion-icon></a>
+                </div>
+                <div class="basket">
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+                </div>
+                <div class="login_icon">
+                    <a href="../src/pages/login-register/login.html" style="color: unset;">
+                        <ion-icon name="person-circle-outline" id="login_icon"></ion-icon>
+                    </a>
+                </div>
+                <p class="login-text">
+                    Peter Parker
+                </p>
             </div>
         </header>
+
+        <div id="search-mobile">
+            <input type="text" placeholder="Buscar por um jogo ou voucher">
+        </div>
 
         <main class="main">
             <div class="slider">
@@ -87,35 +94,35 @@
 
                 <div class="cards">
                     <div class="card">
-                        <a href="#">
+                        <a href="/src/pages/products/DIABLO.html">
                             <img src="/src/img/products/disponiveis na lobo(icons)/diablo_tile.png" alt="diablo-img">
                             <h2 class="card-title">Diablo: Immortal</h2>
                         </a>
                     </div>
 
                     <div class="card">
-                        <a href="#"></a>
+                        <a href="/src/pages/products/APEX.html">
                             <img src="/src/img/products/disponiveis na lobo(icons)/exemplo-img.jpg" alt="exemplo-img">
                             <h2 class="card-title">Apex: Legends Mobile</h2>
                         </a>
                     </div>
 
                     <div class="card">
-                        <a href="../src/pages/products/products(default).html">
+                        <a href="../src/pages/products/CODM.html">
                             <img src="/src/img/products/disponiveis na lobo(icons)/exemplo3-img.jpg" alt="exemplo-img">
                             <h2 class="card-title">Call of Duty: Mobile</h2>
                         </a>
                     </div>
 
                     <div class="card">
-                        <a href="#">
+                        <a href="/src/pages/products/PSN.html">
                             <img src="/src/img/products/disponiveis na lobo(icons)/PSN-br_cc-tile.jpg" alt="exemplo-img">
                             <h2 class="card-title">PSN Store</h2>
                         </a>
                     </div>
 
                     <div class="card">
-                        <a href="#">
+                        <a href="/src/pages/products/PUBG.html">
                             <img src="/src/img/products/disponiveis na lobo(icons)/pubg_icon.png" alt="exemplo-img">
                             <h2 class="card-title">Pubg: Mobile</h2>
                         </a>
@@ -356,6 +363,7 @@
                 </div>
             </div>
 
+            <div class="footer-clipPath"></div>
             <div class="footer-pt2">
                 <div class="ajuda">
                     <h1 class="ajuda-title">Precisa de ajuda?</h1>
