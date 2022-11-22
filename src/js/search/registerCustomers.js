@@ -1,3 +1,5 @@
+'use strict';
+
 const form = document.getElementById('form');
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
@@ -19,7 +21,7 @@ Email.addEventListener('keyup', () => {
     if (validationEmail(Email.value) !== true) {
         errorValidation(Email, 'O formato do email deve ser Ex. nome@exemplo.com');
     } else {
-        successValidation(CPF);
+        successValidation(Email);
     }
 });
 
@@ -69,7 +71,6 @@ function checkInputs() {
 
     };
 
-    console.log(data.checkboxNotification)
     if (firstName.value === '') {
         errorValidation(firstName, 'Preencha esse campo');
     }
@@ -99,12 +100,12 @@ function checkInputs() {
         errorValidation(repeatPassword, 'Error, senha invalida');
     }
 
-    if (data.firstName !== '' && data.lastName !== '' && data.Email !== '' && data.Password !== '' && data.Phone !== '' && data.birthDate != '' && data.CPF !== '') {
+    if (data.firstName !== '' && data.lastName !== '' && data.Email !== '' && data.Password !== '' && data.Phone !== '' && data.birthDate != '' && data.CPF !== '' && data.Password === repeatPassword.value.trim()) {
         xhttp.open('POST', '../../db/customers/registerCustomers.php', true);
         xhttp.setRequestHeader('Content-Type', 'application/json');
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
-                var response = this.responseText;
+                let response = this.responseText;
 
                 if (response === 'Success') {
                     window.location.replace('http://localhost/src/index.html');

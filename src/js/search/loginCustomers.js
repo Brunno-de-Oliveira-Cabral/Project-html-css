@@ -38,7 +38,7 @@ function errorValidation(input, message) {
 function checkInputs() {
     const xhttp = new XMLHttpRequest();
 
-    var data = {
+    let data = {
         Email: Email.value.trim(),
         Password: Password.value.trim()
     };
@@ -56,15 +56,13 @@ function checkInputs() {
         xhttp.setRequestHeader('Content-Type', 'application/json');
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
-                var response = JSON.parse(this.responseText);
-                var Json = JSON.parse(response[1]);
-                console.log(response);
-                console.log(Json);
+                let response = JSON.parse(this.responseText);
+                let Json = JSON.parse(response[1]);
 
                 if (response[0] === 'Success') {
                     window.location.replace('http://localhost/src/index.html');
 
-                    alert(`Bem-vindo ${Json[0].name} ${Json[0].sobrenome}`);
+                    alert(`Bem-vindo ${Json[0].firstName} ${Json[0].lastName}`);
                 } else {
                     Email.value = '';
                     Password.value = '';
@@ -78,7 +76,7 @@ function checkInputs() {
 
             }
         };
+        
+        xhttp.send(JSON.stringify(data));
     }
-
-    xhttp.send(JSON.stringify(data));
 }

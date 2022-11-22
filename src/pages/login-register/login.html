@@ -28,12 +28,6 @@
                 <div class="basket">
                     <ion-icon name="bag-handle-outline"></ion-icon>
                 </div>
-                <div class="login_icon">
-                        <ion-icon name="person-circle-outline" id="login_icon"></ion-icon>
-                </div>
-                <p class="login-text">
-                    Peter Parker
-                </p>
             </div>
         </header>
 
@@ -54,22 +48,22 @@
                 <form class="form" id="form">
                     <div class = "form-control">
                         <label for="Email">Email</label>
-                        <input type="email" id="Email" name="Email"/>
+                        <input type="email" id="Email"/>
+
                         <small>Error message</small>
                     </div>
 
                     <div class ="form-control">
                         <label for="Password">Senha</label>
-                        <input type="password" id="Password" name="Password"/>
+                        <input type="password" id="Password"/>
 
                         <small>Error message</small>
                     </div>
 
                     <p class="text_register">Não tem uma conta? <a href="./register.html">Registre-se aqui</a></p>
-                    <button type="submit" form="form">Login</button>
+                    <button type="submit">Login</button>
                     <p class="recover_password">Esqueceu sua senha? <a href="">Recupere aqui.</a></p>
                 </form>
-                <div id="status"></div>
             </div>
         </main>
 
@@ -115,7 +109,6 @@
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script type="text/javascript" src="/src/js/login-register/login.js"></script>
-        <script src="/src/js/login.js"></script>
+        <script src="../../js/search/loginCustomers.js"></script>
     </body>
 </html>

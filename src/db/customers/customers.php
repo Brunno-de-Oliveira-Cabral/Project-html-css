@@ -11,7 +11,7 @@
 
   try {
     // prepare sql and bind parameters
-    $stmt = $conn -> prepare("SELECT name, sobrenome FROM usuario WHERE email = :email AND password = MD5(:password)");
+    $stmt = $conn -> prepare("SELECT firstName, lastName FROM usuario WHERE email = :email AND password = MD5(:password)");
     $stmt -> bindParam(':email', $Email, PDO::PARAM_STR);
     $stmt -> bindParam(':password', $Password, PDO::PARAM_STR);
     $stmt -> execute();
